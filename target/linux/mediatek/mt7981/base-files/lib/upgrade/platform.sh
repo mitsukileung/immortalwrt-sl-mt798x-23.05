@@ -217,6 +217,7 @@ platform_do_upgrade() {
 		nand_do_upgrade "$1"
 		;;
         cmcc,xr30-emmc |\
+	*sl,3000* |\
         *sl,3000-emmc* |\
 	cmcc,rax3000m-emmc |\
 	*emmc*)
@@ -270,6 +271,7 @@ platform_check_image() {
 	*nokia,ea0326gmp* |\
         *newland,nl-wr8103* |\
 	*newland,nl-wr9103* |\
+        *sl,3000* |\
         *sl,3000-emmc* |\
 	*snand* |\
 	*emmc*)
