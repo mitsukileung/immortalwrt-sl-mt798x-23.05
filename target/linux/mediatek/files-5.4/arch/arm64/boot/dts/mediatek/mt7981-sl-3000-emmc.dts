@@ -56,13 +56,6 @@
 			linux,input-type = <EV_SW>;
 		};
 	};
-
-	gsw: gsw@0 {
-		compatible = "mediatek,mt753x";
-		mediatek,ethsys = <&ethsys>;
-		#address-cells = <1>;
-		#size-cells = <0>;
-	};
 };
 
 &uart0 {
