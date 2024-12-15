@@ -325,7 +325,7 @@ mediatek_setup_macs()
 		fi
 		;;
 	*sl,3000*)
-		lan_mac=$(mtd_get_mac_binary factory 0x04)
+		lan_mac=$(mtd_get_mac_binary Factory 0x04)
 		wan_mac=$(macaddr_add $lan_mac -2)
 		label_mac=$wan_mac
 		local wifi_mac="$(macaddr_add $lan_mac 1)"
